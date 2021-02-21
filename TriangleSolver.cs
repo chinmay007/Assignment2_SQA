@@ -12,20 +12,17 @@ namespace Assignment2_SQA
             {
                 return "Triangle is not Valid";
             }
+            else if (a == b && b == c)
+            {     
+                return "This is Equilateral Triangle";
+            }
+            else if (a == b || b == c || a == c)
+            {
+                return "This is Isosceles Triangle";
+            }
             else
             {
-                if (a == b && b == c)
-                {
-                    return "This is Equilateral Triangle";
-                }
-                else if (a == b && b == c && a == c)
-                {
-                    return "This is Isosceles Triangle";
-                }
-                else
-                {
-                    return "This is Scalene Triangle";
-                }
+                return "This is Scalene Triangle";
             }
         }
     }
